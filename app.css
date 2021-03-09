@@ -1,0 +1,143 @@
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        background-color: rgb(252, 252, 252);
+        overflow: hidden;
+        position: relative;
+    }
+    
+    h1 {
+        font-family: 'Libre Caslon Display', serif;
+        color: black;
+        font-weight: 500;
+        text-align: center;
+        margin: auto;
+        font-size: 80px;
+        border-bottom: black solid 1px;
+    }
+    
+    .search-bar {
+        margin: 7px 0 7px 30px;
+        border-radius: 10px;
+        padding: 3px;
+        padding-left: 10px;
+        background-color: rgb(235, 235, 235);
+        border: none;
+    }
+    
+    .navbar {
+        font-size: 16px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 0;
+    }
+    
+     ::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: transparent;
+        transition: all 200ms;
+    }
+    
+    .search-bar:hover::-webkit-input-placeholder {
+        color: darkgrey;
+    }
+    
+    .menu-icon {
+        padding: 0;
+        margin: 2px;
+        background-image: url("menubar.png");
+        height: 32px;
+        width: 32px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 32px 32px;
+        border: none;
+        background-color: transparent;
+        transition: all 200ms;
+        list-style-type: none;
+    }
+    
+    .list {
+        background-color: white;
+        white-space: nowrap;
+        padding: 0;
+        list-style-type: none;
+        margin: 0;
+        position: absolute;
+        top: 2em;
+        left: 100%;
+        transition: left 300ms;
+        z-index: 1;
+    }
+    
+    li {
+        border-top: 1px solid rgba(169, 169, 169, 0.5);
+        margin-top: 4px;
+    }
+    
+    ul:first-child {
+        border: none;
+    }
+    
+    .menu-icon:hover {
+        transform: rotate(-0.25turn);
+    }
+    
+    .menu-icon:hover+.list {
+        left: 85%;
+        padding: 0 20% 1% 1%;
+    }
+    
+    section {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+    
+    .background {
+        display: flex;
+        width: 100%;
+        height: 80%;
+        margin: 0;
+        background-image: url("bkg5.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-direction: column;
+        background-position-y: center;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    a {
+        font-family: 'Noto Sans SC', sans-serif;
+        border-radius: 5px;
+        border: 1px solid rgb(89, 145, 201);
+        display: block;
+        color: white;
+        padding: 1.5% 4% 1.5% 4%;
+        text-decoration: none;
+        background-color: rgb(89, 145, 201);
+        transition: background-color 300ms;
+    }
+    
+    p {
+        font-size: 12px;
+        display: block;
+        margin-bottom: 5%;
+        color: rgba(46, 46, 46, 0.822);
+    }
+    
+    form {
+        position: absolute;
+    }
+    
+    .registerbtn:hover {
+        border-color: rgb(74, 120, 165);
+        background-color: rgb(74, 120, 165);
+    }

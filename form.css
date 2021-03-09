@@ -1,0 +1,45 @@
+html {
+    font-size: small;
+}
+
+#heading {
+    text-align: center;
+    font-family: 'Libre Caslon Display', serif;
+    color: black;
+    font-weight: 400;
+    text-align: center;
+    margin: auto;
+    font-size: 80px;
+    border-bottom: black solid 1px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+#formgroup {
+    /* border-color: rgb(245, 243, 243); */
+    background-color: rgb(245, 243, 243);
+    border-radius: 10px;
+    width: 30%;
+}
+
+label {
+    font-family: 'Noto Sans SC', sans-serif;
+    color: dimgray;
+}
+
+#submitbtn {
+    color: white;
+    border-color: rgb(89, 145, 201);
+    background-color: rgb(89, 145, 201);
+}
+
+#submitbtn:hover {
+    background-color: rgb(74, 120, 165);
+}
+
+a:hover {
+    text-decoration: none;
+}
