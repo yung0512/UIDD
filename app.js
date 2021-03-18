@@ -36,3 +36,15 @@ $('.menu-icon').click(function(event){
     // $('.click').css("left",`${100-value}%`)
     $('.menu-icon').toggleClass('hover')
 })
+$('.registerbtn').click(function(event){
+    event.preventDefault();
+    if(flag2){
+        $('.main-show').css('left','100%')
+        $('#signup').toggleClass('move')
+        flag2=false;
+    }else{
+        $('.main-show').css('left','0')
+        $('#signup').toggleClass('move')
+        flag2 = !flag2;
+    }
+})
